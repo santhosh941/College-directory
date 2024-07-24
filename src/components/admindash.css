@@ -1,0 +1,152 @@
+/* adminDashboard.css */
+
+.admin-dashboard {
+  display: flex;
+}
+
+.hamburger-menu {
+  width: 250px;
+  height: 100vh;
+  transition: transform 0.2s ease;
+  
+
+}
+
+.hamburger-menu.open {
+  transform: translateX(1);
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin: 10px;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #42484f;
+}
+.menu-content h2{
+    background:none;
+}
+.menu-content ul li{
+    margin: 1px 0;
+    cursor: pointer;
+    padding: 10px;
+    font-size: larger;
+    background: none;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 10px;
+  transition: margin-left 0.3s ease;
+}
+
+.content.shifted {
+  margin-left: 100px;
+}
+
+.dashboard-section {
+  padding: 20px;
+}
+
+.manage-records {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-section,
+.records-list {
+  width: 48%;
+}
+.btnadd{
+    background-color: rgb(15, 207, 56);
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius:3px;
+    border: none;
+}
+.btnremove{
+ background-color: red;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius:3px;
+    border: none
+}
+.btnupdate{
+    background-color: rgb(228, 235, 27);
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius:3px;
+    border: none
+}
+.namefield{
+    margin: 20px 5px 10px 10px;
+    border-radius: 5px;
+    
+    
+}
+.emailfield{
+    margin: 10px 5px 10px 10px;
+    border-radius: 5px;
+    
+}
+.phonefield{
+    margin: 10px 5px 10px 10px;
+    border-radius: 5px;
+    
+}
+.buttonsubmit{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: green;
+
+}
+.records-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.records-list th,
+.records-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.records-list th {
+  background-color: #f4f4f4;
+}
+.tablebtn1{
+    background-color:green;
+    margin-right: 5px;
+}
+.tablebtn2{
+    background-color: red;
+    
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart {
+  width: 48%;
+}
+
+.chart-placeholder {
+  height: 200px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
